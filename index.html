@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Samuel Gomez</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="preload" href="./src/assets/font/Raleway-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="./src/js/hamburguer.js" defer></script>
+</head>
+<body class="bg-primary">
+  <header class="wrapper bg-primary/65 flex justify-between items-center gap-6 text-white py-4 fixed z-10 top-0 inset-x-0 backdrop-blur-md">
+    <a class="font-bold text-lg custom-focus-visible transition-colors duration-300 hover:text-accent" href="/" aria-label="Ir a la página principal">Samuel Gomez</a>
+    <button class="hamburguer relative z-10 flex justify-center items-center flex-col gap-[13%] w-8 h-8 group custom-focus-visible" aria-label="Abrir menú de navegación" aria-expanded="false">
+      <span class="w-full h-1 duration-300 rounded-full bg-white transition-all group-hover:bg-accent"></span>
+      <span class="w-full h-1 duration-300 rounded-full bg-white transition-all group-hover:bg-accent"></span>
+      <span class="w-full h-1 duration-300 rounded-full bg-white transition-all group-hover:bg-accent"></span>
+    </button>
+    <nav class="menu fixed w-[90%] inset-y-0 right-0 h-dvh bg-secondary flex justify-center items-center translate-x-full transition-transform duration-300 max-w-sm">
+      <ul class="w-full">
+        <li>
+          <a class="text-lg text-white font-medium block text-center p-4 duration-300 transition-colors hover:text-accent custom-focus-visible" href="#inicio" aria-label="Ir a la sección de inicio">Inicio</a>
+        </li>
+        <li>
+          <a class="text-lg text-white font-medium block text-center p-4 duration-300 transition-colors hover:text-accent custom-focus-visible" href="#sobre-mi" aria-label="Ir a la sección de sobre mi">Sobre mi</a>
+        </li>
+        <li>
+          <a class="text-lg text-white font-medium block text-center p-4 duration-300 transition-colors hover:text-accent custom-focus-visible" href="#habilidades" aria-label="Ir a la sección de habilidades">Habilidades</a>
+        </li>
+        </li>
+        <li>
+          <a class="text-lg text-white font-medium block text-center p-4 duration-300 transition-colors hover:text-accent custom-focus-visible" href="#formacion" aria-label="Ir a la sección de formación">Formación</a>
+        </li>
+        <li>
+          <a class="text-lg text-white font-medium block text-center p-4 duration-300 transition-colors hover:text-accent custom-focus-visible" href="#proyectos" aria-label="Ir a la sección de proyecto">Proyectos</a>
+        </li>
+        <li>
+          <a class="text-lg text-white font-medium block text-center p-4 duration-300 transition-colors hover:text-accent custom-focus-visible" href="#proyectos" aria-label="Ir a la sección de contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pt-16">
+    <section id="inicio" class="wrapper my-8">
+      <picture class="block aspect-square max-w-32 w-full rounded-full overflow-hidden mb-4">
+        <source srcset="./src/assets/img/perfil.avif" type="image/avif">
+        <img class="w-full h-full object-cover object-center" src="./src/assets/img/perfil.webp" alt="Imagen de portafolio">
+      </picture>
+      <div class="space-y-4">
+        <h1 class="title">Diseñador y <br> Desarrollador Web</h1>
+        <p class="text-white text-sm text-pretty">¡Hola!, soy Samuel Gomez, me apasiona esta areá de la programación, tengo el objetivo de construir experiencias web atractivas.</p>
+        <div class="flex flex-wrap gap-6">
+          <a class="flex items-center gap-2 text-white font-semibold text-sm group max-w-max duration-300 transition-colors hover:text-accent custom-focus-visible" href="https://github.com/samuelgomez05/" rel="noopener noreferrer" target="_blank" aria-label="Github de Samuel Gomez, se abrirá en una nueva pestaña">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" clip-rule="evenodd"/></svg>
+            Github
+          </a>
+          <a class="flex items-center gap-2 text-white font-semibold text-sm group max-w-max duration-300 transition-colors hover:text-accent custom-focus-visible" href="https://www.linkedin.com/in/samuel-gomez-6547332b5/" rel="noopener noreferrer" target="_blank" aria-label="Linkedin de Samuel Gomez, se abrirá en una nueva pestaña">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"/></svg>
+            Linkedin
+          </a>
+          <a class="flex items-center gap-2 text-white font-semibold text-sm group max-w-max duration-300 transition-colors hover:text-accent custom-focus-visible" href="" rel="noopener noreferrer" target="_blank" aria-label="Curriculum de Samuel Gomez, se descargará el archivo">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"/><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"/></svg>
+            Curriculum
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-secondary">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="fill-primary max-h-11" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,213.3C320,245,400,267,480,250.7C560,235,640,181,720,160C800,139,880,149,960,176C1040,203,1120,245,1200,266.7C1280,288,1360,288,1400,288L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+      <div id="sobre-mi" class="wrapper py-8 space-y-4">
+        <h2 class="title">Sobre mi</h2>
+        <p class="text-white text-sm text-pretty">Soy de Perú y tengo 19 años. Actualmente estudio <strong>diseño y programación web</strong> en un instituto de mi ciudad, me apasiona la tecnología y siempre estoy en búsqueda de aprender cosas nuevas.</p>
+        <p class="text-white text-sm text-pretty">He tenido la oportunidad de crear páginas web, lo que me ha dado <strong>experiencia real</strong> en maquetación y diseño web, poniendo en práctica mi aprendizaje y mejorando mis habilidades.</p>
+      </div>
+    </section>
+    <section id="habilidades" class="wrapper my-8">
+      <h2 class="title text-center mb-8">Habilidades</h2>
+      <div class="grid grid-cols-2 gap-x-4 gap-y-8">
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/html.svg" alt="Logo de HTML">
+          <p class="text-white font-bold">HTML</p>
+        </article>
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/css.svg" alt="Logo de CSS">
+          <p class="text-white font-bold">CSS</p>
+        </article>
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/tailwindcss.svg" alt="Logo de Tailwind CSS">
+          <p class="text-white font-bold">Tailwind CSS</p>
+        </article>
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/javascript.svg" alt="Logo de JavaScript">
+          <p class="text-white font-bold">JavaScript</p>
+        </article>
+      </div>
+    </section>
+    <section class="wrapper my-8">
+      <h2 class="title text-center mb-8">Pasatiempos</h2>
+      <div class="grid grid-cols-2 gap-x-4 gap-y-8">
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/headphones.svg" alt="Icono de auriculares">
+          <p class="text-white font-bold">Escuchar música</p>
+        </article>
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/movie.svg" alt="Icono de pelicula">
+          <p class="text-white font-bold">Ver peliculas</p>
+        </article>
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/football.svg" alt="Icono de un balón de fútbol">
+          <p class="text-white font-bold">Ver fútbol</p>
+        </article>
+        <article class="bg-secondary p-4 pt-10">
+          <img class="w-8 aspect-square mb-4" src="./src/assets/icons/laptop.svg" alt="Icono de una laptop">
+          <p class="text-white font-bold">Videojuegos</p>
+        </article>
+      </div>
+    </section>
+    <section class="bg-secondary">
+      <div id="formacion" class="wrapper py-8">
+        <h2 class="title text-center mb-8">Formación académica</h2>
+        <div class="grid grid-cols-1 gap-x-4 gap-y-8">
+          <article>
+            <div class="bg-tertiary flex justify-center items-center p-8 mb-4 aspect-video">
+              <picture class="block h-20 w-auto">
+                <source srcset="./src/assets/img/one.avif" type="image/avif">
+                <img class="w-full h-full object-contain" src="./src/assets/img/one.webp" alt="Logo de Oracle Next Education">
+              </picture>
+            </div>
+            <h3 class="font-bold text-white mb-2">Oracle Next Education</h3>
+            <p class="text-sm font-medium text-white">2024 - Oracle + Alura</p>
+          </article>
+          <article>
+            <div class="bg-tertiary flex justify-center items-center p-8 mb-4 aspect-video">
+              <picture class="block h-20 w-auto">
+                <source srcset="./src/assets/img/tecnosur.avif" type="image/avif">
+                <img class="w-full h-full object-contain" src="./src/assets/img/tecnosur.webp" alt="Logo de Tecnosur">
+              </picture>
+            </div>
+            <h3 class="font-bold text-white mb-2">Diseño y Programación Web</h3>
+            <p class="text-sm font-medium text-white">2022 - 2024 - IESTP TECNOSUR</p>
+          </article>
+          <article>
+            <div class="bg-tertiary flex justify-center items-center p-8 mb-4 aspect-video">
+              <picture class="block h-20 w-auto">
+                <source srcset="./src/assets/img/freecodecamp.avif" type="image/avif">
+                <img class="w-full h-full object-contain" src="./src/assets/img/freecodecamp.webp" alt="Logo de freeCodeCamp">
+              </picture>
+            </div>
+            <div class="flex items-center gap-4 justify-between">
+              <div>
+                <h3 class="font-bold text-white mb-2">Diseño web responsivo</h3>
+                <p class="text-sm font-medium text-white">2023 - freeCodeCamp</p>
+              </div>
+              <a class=" text-white transition-colors duration-300 custom-focus-visible hover:text-accent" href="https://www.freecodecamp.org/espanol/certification/SamuelGG/responsive-web-design" target="_blank" rel="noopener noreferrer" aria-label="Ver certificado de Diseño web responsivo de freeCodeCamp">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"/><path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos" class="wrapper my-8">
+      <h2 class="title text-center mb-8">Proyectos</h2>
+      <div class="grid gap-16">
+        <article class="group bg-tertiary">
+          <div class="relative">
+            <picture class="block aspect-[1366/639]">
+              <source srcset="./src/assets/img/tesis-vip-españa.avif" type="image/avif">
+              <img class="w-full h-full object-cover aspect-[1366/639]" src="./src/assets/img/tesis-vip-españa.webp" alt="Captura del proyecto - Tesis VIP España">
+            </picture>
+            <div class="bg-tertiary/85 w-full h-full flex justify-center items-center gap-4 absolute inset-x-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto has-[:focus,:focus-visible]:opacity-100 has-[:focus,:focus-visible]:pointer-events-auto">
+              <a class="btn btn--primary" href="https://tesis-vip.com/" rel="noopener noreferrer" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+          <div class="space-y-2 p-4">
+            <h3 class="font-bold text-white ">Tesis VIP España</h3>
+            <p class="font-medium text-sm text-white">Next Boost Perú</p>
+            <hr class="w-full border-white/50">
+            <div class="flex gap-4 justify-between">
+              <p class="text-sm text-white">Desarrollado con:</p>
+              <div class="flex gap-2">
+                <img src="./src/assets/icons/html.svg" alt="Logo de HTML" title="HTML">
+                <img src="./src/assets/icons/css.svg" alt="Logo de CSS" title="CSS">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-tertiary">
+          <div class="relative">
+            <picture class="block aspect-[1366/639]">
+              <source srcset="./src/assets/img/tesis-vip.avif" type="image/avif">
+              <img class="w-full h-full object-cover aspect-[1366/639]" src="./src/assets/img/tesis-vip.webp" alt="Captura del proyecto - Tesis VIP">
+            </picture>
+            <div class="bg-tertiary/85 w-full h-full flex justify-center items-center gap-4 absolute inset-x-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto has-[:focus,:focus-visible]:opacity-100 has-[:focus,:focus-visible]:pointer-events-auto">
+              <a class="btn btn--primary" href="https://tesis-vip.com/" rel="noopener noreferrer" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+          <div class="space-y-2 p-4">
+            <h3 class="font-bold text-white ">Tesis VIP</h3>
+            <p class="font-medium text-sm text-white">Next Boost Perú</p>
+            <hr class="w-full border-white/50">
+            <div class="flex gap-4 justify-between">
+              <p class="font-medium text-sm text-white">Desarrollado con:</p>
+              <div class="flex gap-2">
+                <img src="./src/assets/icons/html.svg" alt="Logo de HTML" title="HTML">
+                <img src="./src/assets/icons/css.svg" alt="Logo de CSS" title="CSS">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-tertiary">
+          <div class="relative">
+            <picture class="block aspect-[1366/639]">
+              <source srcset="./src/assets/img/edc-creative.avif" type="image/avif">
+              <img class="w-full h-full object-cover aspect-[1366/639]" src="./src/assets/img/edc-creative.webp" alt="Captura del proyecto - EDC Creative">
+            </picture>
+            <div class="bg-tertiary/85 w-full h-full flex justify-center items-center gap-4 absolute inset-x-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto has-[:focus,:focus-visible]:opacity-100 has-[:focus,:focus-visible]:pointer-events-auto">
+              <a class="btn btn--primary" href="https://edccreative.com/" rel="noopener noreferrer" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+          <div class="space-y-2 p-4">
+            <h3 class="font-bold text-white ">EDC Creative</h3>
+            <p class="font-medium text-sm text-white">Next Boost Perú</p>
+            <hr class="w-full border-white/50">
+            <div class="flex gap-4 justify-between">
+              <p class="font-medium text-sm text-white">Desarrollado con:</p>
+              <div class="flex gap-2">
+                <img src="./src/assets/icons/html.svg" alt="Logo de HTML" title="HTML">
+                <img src="./src/assets/icons/css.svg" alt="Logo de CSS" title="CSS">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-tertiary">
+          <div class="relative">
+            <picture class="block aspect-[1366/639]">
+              <source srcset="./src/assets/img/encriptador-texto.avif" type="image/avif">
+              <img class="w-full h-full object-cover aspect-[1366/639]" src="./src/assets/img/encriptador-texto.webp" alt="Captura del proyecto - Encriptador de texto">
+            </picture>
+            <div class="bg-tertiary/85 w-full h-full flex justify-center items-center gap-4 absolute inset-x-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto has-[:focus,:focus-visible]:opacity-100 has-[:focus,:focus-visible]:pointer-events-auto">
+              <a class="btn btn--secondary" href="https://github.com/samuelgomez05/challenge-encriptador-texto/" rel="noopener noreferrer" target="_blank">Repositorio</a>
+              <a class="btn btn--primary" href="https://samuelgomez05.github.io/challenge-encriptador-texto/" rel="noopener noreferrer" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+          <div class="space-y-2 p-4">
+            <h3 class="font-bold text-white ">Encriptador de texto</h3>
+            <p class="font-medium text-sm text-white">Oracle Next Education</p>
+            <hr class="w-full border-white/50">
+            <div class="flex gap-4 justify-between">
+              <p class="font-medium text-sm text-white">Desarrollado con:</p>
+              <div class="flex gap-2">
+                <img src="./src/assets/icons/html.svg" alt="Logo de HTML" title="HTML">
+                <img src="./src/assets/icons/css.svg" alt="Logo de CSS" title="CSS">
+                <img src="./src/assets/icons/javascript.svg" alt="Logo de JavaScript" title="JavaScript">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-tertiary">
+          <div class="relative">
+            <picture class="block aspect-[1366/639]">
+              <source srcset="./src/assets/img/juego-numero-secreto.avif" type="image/avif">
+              <img class="w-full h-full object-cover aspect-[1366/639]" src="./src/assets/img/juego-numero-secreto.webp" alt="Captura del proyecto - Juego del número secreto">
+            </picture>
+            <div class="bg-tertiary/85 w-full h-full flex justify-center items-center gap-4 absolute inset-x-0 top-1/2 -translate-y-1/2 transition-opacity duration-300 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto has-[:focus,:focus-visible]:opacity-100 has-[:focus,:focus-visible]:pointer-events-auto">
+              <a class="btn btn--secondary" href="https://github.com/samuelgomez05/juego-numero-secreto/" rel="noopener noreferrer" target="_blank">Repositorio</a>
+              <a class="btn btn--primary" href="https://samuelgomez05.github.io/juego-numero-secreto/" rel="noopener noreferrer" target="_blank">Ver proyecto</a>
+            </div>
+          </div>
+          <div class="space-y-2 p-4">
+            <h3 class="font-bold text-white ">Juego del número secreto</h3>
+            <p class="font-medium text-sm text-white">Oracle Next Education</p>
+            <hr class="w-full border-white/50">
+            <div class="flex gap-4 justify-between">
+              <p class="font-medium text-sm text-white">Desarrollado con:</p>
+              <div class="flex gap-2">
+                <img src="./src/assets/icons/html.svg" alt="Logo de HTML" title="HTML">
+                <img src="./src/assets/icons/css.svg" alt="Logo de CSS" title="CSS">
+                <img src="./src/assets/icons/javascript.svg" alt="Logo de JavaScript" title="JavaScript">
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="bg-secondary">
+      <div class="wrapper py-8">
+        <h2 class="title mb-4">Contacto</h2>
+        <p class="font-medium text-pretty text-white mb-8">¿Quieres contactarme? Completa el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+        <form class="space-y-8" action="" method="">
+          <div class="relative">
+            <input id="nombre" class="peer block bg-tertiary px-3 py-4 w-full text-white border-b-2 border-solid border-accent transition-colors duration-300 outline-none placeholder-shown:border-transparent focus:border-accent hover:border-accent" type="text" placeholder=" ">
+            <label class="text-accent absolute text-xs left-3 top-0 -translate-y-1/2 transition-all duration-300 peer-focus:text-accent peer-focus:top-0 peer-focus:text-xs peer-placeholder-shown:text-white peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base" for="nombre">Nombre</label>
+          </div>
+          <div class="relative">
+            <input id="email" class="peer block bg-tertiary px-3 py-4 w-full text-white border-b-2 border-solid border-accent transition-colors duration-300 outline-none placeholder-shown:border-transparent focus:border-accent hover:border-accent" type="email" placeholder=" ">
+            <label class="text-accent absolute text-xs left-3 top-0 -translate-y-1/2 transition-all duration-300 peer-focus:text-accent peer-focus:top-0 peer-focus:text-xs peer-placeholder-shown:text-white peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base" for="email">Email</label>
+          </div>
+          <div class="relative">
+            <input id="asunto" class="peer block bg-tertiary px-3 py-4 w-full text-white border-b-2 border-solid border-accent transition-colors duration-300 outline-none placeholder-shown:border-transparent focus:border-accent hover:border-accent" type="text" placeholder=" ">
+            <label class="text-accent absolute text-xs left-3 top-0 -translate-y-1/2 transition-all duration-300 peer-focus:text-accent peer-focus:top-0 peer-focus:text-xs peer-placeholder-shown:text-white peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base" for="asunto">Asunto</label>
+          </div>
+          <div class="relative">
+            <textarea id="mensaje" class="peer block resize-none h-[3.625rem] bg-tertiary px-3 py-4 w-full text-white border-b-2 border-solid border-accent transition-colors duration-300 outline-none placeholder-shown:border-transparent focus:border-accent hover:border-accent" placeholder=" "></textarea>
+            <label class="text-accent absolute text-xs left-3 top-0 -translate-y-1/2 transition-all duration-300 peer-focus:text-accent peer-focus:top-0 peer-focus:text-xs peer-placeholder-shown:text-white peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base" for="mensaje">Mensaje</label>
+          </div>
+          <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="wrapper py-8">
+    <p class="text-white text-pretty text-center">Desarrollado por Samuel Gomez - 2024</p>
+  </footer>
+</body>
+</html>
