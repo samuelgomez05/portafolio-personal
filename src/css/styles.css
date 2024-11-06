@@ -1247,6 +1247,14 @@ html {
     max-width: 9rem;
   }
 
+  .md\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .md\:max-w-5xl {
+    max-width: 64rem;
+  }
+
   .md\:shrink-0 {
     flex-shrink: 0;
   }
