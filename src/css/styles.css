@@ -801,6 +801,10 @@ html {
   max-height: 18rem;
 }
 
+.max-h-24 {
+  max-height: 6rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -846,6 +850,12 @@ html {
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .resize-none {
