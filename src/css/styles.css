@@ -1348,6 +1348,10 @@ html {
     gap: 2rem;
   }
 
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .lg\:bg-transparent {
     background-color: transparent;
   }
