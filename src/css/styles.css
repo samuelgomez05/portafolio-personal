@@ -686,6 +686,193 @@ html {
   color: rgb(0 255 34 / var(--tw-text-opacity));
 }
 
+.card {
+  --size: 2px;
+  --negative-size: calc(var(--size) * -1);
+  --bg: #00ff2280;
+}
+
+.top,
+  .bottom,
+  .left,
+  .right {
+  position: absolute;
+  animation: 3s linear infinite;
+}
+
+.top {
+  top: var(--negative-size);
+  left: var(--negative-size);
+  height: var(--size);
+}
+
+.card:hover .top {
+  animation-name: top;
+}
+
+.bottom {
+  bottom: var(--negative-size);
+  right: var(--negative-size);
+  height: var(--size);
+}
+
+.card:hover .bottom {
+  animation-name: bottom;
+}
+
+.left {
+  bottom: var(--negative-size);
+  left: var(--negative-size);
+  width: var(--size);
+}
+
+.card:hover .left {
+  animation-name: left;
+}
+
+.right {
+  top: var(--negative-size);
+  right: var(--negative-size);
+  width: var(--size);
+}
+
+.card:hover .right {
+  animation-name: right;
+}
+
+@keyframes top {
+  25% {
+    width: 0;
+    background-color: var(--bg);
+  }
+
+  38% {
+    width: calc(103%);
+    background-color: var(--bg);
+  }
+
+  50% {
+    background-color: var(--bg);
+  }
+
+  62% {
+    background-color: var(--bg);
+  }
+
+  75% {
+    width: calc(103%);
+    background-color: var(--bg);
+  }
+
+  88% {
+    left: auto;
+    right: var(--negative-size);
+    width: 0;
+    background-color: var(--bg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    width: 0;
+  }
+
+  12% {
+    width: calc(103%);
+    background-color: var(--bg);
+  }
+
+  25% {
+    background-color: var(--bg);
+  }
+
+  38% {
+    background-color: var(--bg);
+  }
+
+  50% {
+    width: calc(103%);
+    background-color: var(--bg);
+  }
+
+  62% {
+    left: var(--negative-size);
+    width: 0;
+    background-color: var(--bg);
+  }
+
+  75% {
+    background-color: var(--bg);
+  }
+}
+
+@keyframes left {
+  12% {
+    height: 0;
+    background-color: var(--bg);
+  }
+
+  25% {
+    height: calc(103%);
+    background-color: var(--bg);
+  }
+
+  38% {
+    background-color: var(--bg);
+  }
+
+  50% {
+    background-color: var(--bg);
+  }
+
+  62% {
+    height: calc(103%);
+    background-color: var(--bg);
+  }
+
+  75% {
+    top: var(--negative-size);
+    height: 0;
+    background-color: var(--bg);
+  }
+
+  88% {
+    background-color: var(--bg);
+  }
+}
+
+@keyframes right {
+  38% {
+    height: 0;
+    background-color: var(--bg);
+  }
+
+  50% {
+    height: calc(103%);
+    background-color: var(--bg);
+  }
+
+  62% {
+    background-color: var(--bg);
+  }
+
+  75% {
+    background-color: var(--bg);
+  }
+
+  88% {
+    height: calc(103%);
+    background-color: var(--bg);
+  }
+
+  100% {
+    top: auto;
+    bottom: var(--negative-size);
+    height: 0;
+    background-color: var(--bg);
+  }
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -958,6 +1145,10 @@ html {
   border-radius: 9999px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -969,6 +1160,10 @@ html {
 .border-accent {
   --tw-border-opacity: 1;
   border-color: rgb(0 255 34 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .border-white\/50 {
