@@ -115,7 +115,7 @@
       background-color: var(--bg);
     }
     38% {
-      width: calc(103%);
+      width: calc(100% + 4px);
       background-color: var(--bg);
     }
     50% {
@@ -125,7 +125,7 @@
       background-color: var(--bg);
     }
     75% {
-      width: calc(103%);
+      width: calc(100% + 4px);
       background-color: var(--bg);
     }
     88% {
@@ -141,7 +141,7 @@
       width: 0;
     }
     12% {
-      width: calc(103%);
+      width: calc(100% + 4px);
       background-color: var(--bg);
     }
     25% {
@@ -151,7 +151,7 @@
       background-color: var(--bg);
     }
     50% {
-      width: calc(103%);
+      width: calc(100% + 4px);
       background-color: var(--bg);
     }
     62% {
@@ -170,7 +170,7 @@
       background-color: var(--bg);
     }
     25% {
-      height: calc(103%);
+      height: calc(100% + 4px);
       background-color: var(--bg);
     }
     38% {
@@ -180,7 +180,7 @@
       background-color: var(--bg);
     }
     62% {
-      height: calc(103%);
+      height: calc(100% + 4px);
       background-color: var(--bg);
     }
     75% {
@@ -199,7 +199,7 @@
       background-color: var(--bg);
     }
     50% {
-      height: calc(103%);
+      height: calc(100% + 4px);
       background-color: var(--bg);
     }
     62% {
@@ -209,7 +209,7 @@
       background-color: var(--bg);
     }
     88% {
-      height: calc(103%);
+      height: calc(100% + 4px);
       background-color: var(--bg);
     }
     100% {
