@@ -15,7 +15,6 @@
     <div class="wrapper flex justify-between items-center gap-6 text-white py-4 lg:py-8">
       <a class="flex items-center gap-2 font-bold text-lg custom-focus-visible transition-colors duration-300 hover:text-accent" href="/" aria-label="Ir a la página principal">
         <img src="./src/assets/icons/logo.svg" alt="Logo de Samuel Gomez" class="w-8 h-8">
-        Samuel Gomez
       </a>
       <button class="hamburguer relative z-10 flex justify-center items-center flex-col gap-[13%] w-8 h-8 group custom-focus-visible lg:hidden" aria-label="Abrir menú de navegación" aria-expanded="false">
         <span class="w-full h-1 duration-300 rounded-full bg-white transition-all group-hover:bg-accent"></span>
@@ -48,14 +47,14 @@
     </div>
   </header>
   <main class="pt-16 md:pt-20 lg:pt-24">
-    <section id="inicio" class="wrapper my-8 md:flex md:flex-row-reverse items-center justify-between gap-8">
+    <section id="inicio" class="wrapper my-8 md:flex md:flex-row-reverse md:items-center md:justify-between md:gap-8">
       <picture class="block aspect-square max-w-32 w-full rounded-full overflow-hidden mb-4 md:shrink-0 md:max-w-36 lg:max-w-52">
         <source srcset="./src/assets/img/perfil.avif" type="image/avif">
         <img class="w-full h-full object-cover object-center" src="./src/assets/img/perfil.webp" alt="Imagen de portafolio">
       </picture>
       <div class="space-y-4 md:max-w-3xl">
-        <h1 class="title text-3xl lg:text-4xl">Diseñador y <br> Desarrollador Web</h1>
-        <p class="text-white text-sm text-pretty md:text-base">¡Hola!, soy Samuel Gomez, me apasiona esta areá de la programación, tengo el objetivo de construir experiencias web atractivas.</p>
+        <h1 class="title text-3xl lg:text-4xl">¡Hola!, soy Samuel Gomez</h1>
+        <p class="text-white/80 text-sm text-pretty md:text-base">Diseñador y Desarrollador Web, de Perú, me apasiona esta areá de la programación, tengo el objetivo de construir experiencias web atractivas.</p>
         <div class="flex flex-wrap gap-6 md:gap-8">
           <a class="flex items-center gap-2 text-white font-semibold text-sm group max-w-max duration-300 transition-colors hover:text-accent custom-focus-visible md:text-base" href="https://github.com/samuelgomez05/" rel="noopener noreferrer" target="_blank" aria-label="Github de Samuel Gomez, se abrirá en una nueva pestaña">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" clip-rule="evenodd"/></svg>
@@ -76,8 +75,8 @@
     <section class="bg-secondary">
       <div id="sobre-mi" class="wrapper py-8 space-y-4">
         <h2 class="title">Sobre mi</h2>
-        <p class="text-white text-sm text-pretty md:text-base md:max-w-3xl">Soy de Perú y tengo 19 años. Actualmente estudio <strong>diseño y programación web</strong> en un instituto de mi ciudad, me apasiona la tecnología y siempre estoy en búsqueda de aprender cosas nuevas.</p>
-        <p class="text-white text-sm text-pretty md:text-base md:max-w-3xl">He tenido la oportunidad de crear páginas web, lo que me ha dado <strong>experiencia real</strong> en maquetación y diseño web, poniendo en práctica mi aprendizaje y mejorando mis habilidades.</p>
+        <p class="text-white/80 text-sm text-pretty md:text-base md:max-w-3xl">Soy de Perú y tengo 19 años. Actualmente estudio <strong class="text-white">diseño y programación web</strong> en un instituto de mi ciudad, me apasiona la tecnología y siempre estoy en búsqueda de aprender cosas nuevas.</p>
+        <p class="text-white/80 text-sm text-pretty md:text-base md:max-w-3xl">He tenido la oportunidad de crear páginas web, lo que me ha dado <strong class="text-white">experiencia real</strong> en maquetación y diseño web, poniendo en práctica mi aprendizaje y mejorando mis habilidades.</p>
       </div>
     </section>
     <img class="select-none pointer-events-none" src="./src/assets/icons/wave-bottom.svg" alt="" aria-hidden="true" role="none">
@@ -90,7 +89,7 @@
           <div class="left"></div>
           <div class="right"></div>
           <img class="w-8 aspect-square mb-4" src="./src/assets/icons/html.svg" alt="Logo de HTML">
-          <p class="text-white font-bold">HTML</p>
+          <p class="text-white font-bold ">HTML</p>
         </article>
         <article class="card relative border-2 border-solid border-transparent bg-secondary p-4 pt-10 md:pt-12 lg:pt-16">
           <div class="top"></div>
@@ -168,7 +167,7 @@
               </picture>
             </div>
             <h3 class="font-bold text-white mb-2 lg:text-xl">Oracle Next Education</h3>
-            <p class="text-sm font-medium text-white lg:text-base">2024 - Oracle + Alura</p>
+            <p class="text-sm font-medium text-white/80 lg:text-base">2024 - Oracle + Alura</p>
           </article>
           <article class="group">
             <div class="bg-tertiary flex justify-center items-center p-8 mb-4 aspect-video max-h-72 w-full overflow-hidden">
@@ -178,7 +177,7 @@
               </picture>
             </div>
             <h3 class="font-bold text-white mb-2 lg:text-xl">Diseño y Programación Web</h3>
-            <p class="text-sm font-medium text-white lg:text-base">2022 - 2024 - IESTP TECNOSUR</p>
+            <p class="text-sm font-medium text-white/80 lg:text-base">2022 - 2024 - IESTP TECNOSUR</p>
           </article>
           <article class="group">
             <div class="bg-tertiary flex justify-center items-center p-8 mb-4 aspect-video max-h-72 w-full overflow-hidden">
@@ -190,7 +189,7 @@
             <div class="flex items-center gap-4 justify-between">
               <div>
                 <h3 class="font-bold text-white mb-2 lg:text-xl">Diseño web responsivo</h3>
-                <p class="text-sm font-medium text-white lg:text-base">2023 - freeCodeCamp</p>
+                <p class="text-sm font-medium text-white/80 lg:text-base">2023 - freeCodeCamp</p>
               </div>
               <a class=" text-white transition-colors duration-300 custom-focus-visible hover:text-accent" href="https://www.freecodecamp.org/espanol/certification/SamuelGG/responsive-web-design" target="_blank" rel="noopener noreferrer" aria-label="Ver certificado de Diseño web responsivo de freeCodeCamp">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"/><path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"/></svg>
