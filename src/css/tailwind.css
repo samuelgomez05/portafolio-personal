@@ -219,4 +219,8 @@
       background-color: var(--bg);
     }
   }
+
+  .alert.view {
+    @apply !inset-x-4 !translate-x-0 !opacity-100;
+  }
 }
