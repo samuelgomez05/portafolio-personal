@@ -21,11 +21,10 @@ FORM.addEventListener('submit', (e) => {
   if (!validateTopic(TOPIC, 50)) return;
   if (!validateMessage(MESSAGE, 300)) return;
   
-  // Si todos los inputs son válidos, mostramos alerta, enviamos el formulario y reseteamos los campos
+  // Si todos los inputs son válidos, mostramos alerta y enviamos el formulario
   if (FORM.checkValidity()) {
     viewAlert();
     FORM.submit();
-    FORM.reset();
   }
 });
 
