@@ -347,6 +347,11 @@
             <textarea id="message" class="peer block resize-none h-44 bg-tertiary px-3 py-4 w-full text-white border-b-2 border-solid border-transparent transition-colors duration-300 outline-none focus:border-accent hover:border-accent supports-[field-sizing:content]:[field-sizing:content] supports-[field-sizing:content]:h-auto supports-[field-sizing:content]:min-h-[3.625rem] supports-[field-sizing:content]:max-h-44" name="Mensaje" placeholder=" " required maxlength="300"></textarea>
             <label class="[--top-label:2rem] supports-[field-sizing:content]:[--top-label:50%] select-auto pointer-events-auto text-accent absolute text-xs left-3 top-0 -translate-y-1/2 transition-all duration-300 peer-focus:text-accent peer-focus:top-0 peer-focus:text-xs peer-focus:select-auto peer-focus:pointer-events-auto peer-placeholder-shown:text-white peer-placeholder-shown:top-[--top-label] peer-placeholder-shown:text-base peer-placeholder-shown:select-none peer-placeholder-shown:pointer-events-none" for="message">Mensaje</label>
           </div>
+          <div class="hidden">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://samuelgomez.vercel.app/">
+          </div>
           <button class="btn btn--primary md:text-base" type="submit">Enviar mensaje</button>
         </form>
       </div>
