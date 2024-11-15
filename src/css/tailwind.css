@@ -223,4 +223,12 @@
   .alert.view {
     @apply !inset-x-4 !translate-x-0 !opacity-100;
   }
+
+  .sending {
+    @apply cursor-not-allowed bg-tertiary text-accent border-tertiary hover:scale-[calc(1-2px)];
+  }
+
+  .sending .icon {
+    @apply block animate-spin;
+  }
 }

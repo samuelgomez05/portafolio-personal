@@ -4,6 +4,8 @@ const EMAIL = selectElement('#email');
 const TOPIC = selectElement('#topic');
 const MESSAGE = selectElement('#message');
 const REGEXEMAIL = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+const BTNSUBMIT = selectElement('.btn--form');
+const TEXTBTNSUBMIT = selectElement('.btn--form span');
 
 // Al cargar la página, escuchamos el evento input de cada input para remover el mensaje de validación personalizado
 isWritingInput(NAME);
@@ -25,6 +27,9 @@ FORM.addEventListener('submit', (e) => {
   if (FORM.checkValidity()) {
     viewAlert();
     FORM.submit();
+    TEXTBTNSUBMIT.innerHTML = 'Enviando...';
+    BTNSUBMIT.classList.add('sending');
+    BTNSUBMIT.setAttribute('disabled', '');
   }
 });
 
