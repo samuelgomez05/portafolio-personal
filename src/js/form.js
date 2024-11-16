@@ -23,28 +23,20 @@ FORM.addEventListener('submit', (e) => {
   if (!validateTopic(TOPIC, 50)) return;
   if (!validateMessage(MESSAGE, 300)) return;
   
-  // Si todos los inputs son válidos, mostramos alerta y enviamos el formulario
+  // Si todos los inputs son válidos, enviamos el formulario
   if (FORM.checkValidity()) {
-    viewAlert();
     FORM.submit();
     TEXTBTNSUBMIT.innerHTML = 'Enviando...';
     BTNSUBMIT.classList.add('sending');
     BTNSUBMIT.setAttribute('disabled', '');
+
+    // Guardamos en una variable de sesión que el formulario ha sido enviado
+    sessionStorage.setItem('formSubmitted', 'true');
   }
 });
 
 function selectElement(element) {
   return document.querySelector(element);
-}
-
-function viewAlert() {
-  const ALERT = selectElement('.alert');
-
-  ALERT.classList.add('view');
-
-  setTimeout(() => {
-    ALERT.classList.remove('view');
-  }, 5000);
 }
 
 function isWritingInput(input) {
